@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com";
 
 export interface Event {
     _id: string;

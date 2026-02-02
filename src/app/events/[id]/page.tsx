@@ -261,7 +261,7 @@ import Image from "next/image";
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { formatDate } from "@/lib/formateDate";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com";
 
 export default function EventDetailsPage() {
     const { id } = useParams<{ id: string }>();

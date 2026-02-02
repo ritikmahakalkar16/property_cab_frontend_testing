@@ -78,7 +78,7 @@ import { Star } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+  process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com";
 
 interface Testimonial {
   _id: string;
