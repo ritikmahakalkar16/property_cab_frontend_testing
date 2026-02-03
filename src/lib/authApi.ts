@@ -1,4 +1,4 @@
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://paleturquoise-caribou-901347.hostingersite.com';
 
 export interface RegisterPayload {
   name: string;
