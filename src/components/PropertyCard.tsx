@@ -193,7 +193,6 @@
 
 // export default PropertyCard;
 
-
 // import { Card } from "@/components/ui/card";
 // import { Badge } from "@/components/ui/badge";
 // import { MapPin, Bed, Bath, Square, Building2, Heart, Eye, ArrowRight } from "lucide-react";
@@ -403,10 +402,7 @@
 
 // export default PropertyCard;
 
-
-
-
-// =============== version 1 ============= 
+// =============== version 1 =============
 
 // import { Card } from "@/components/ui/card";
 // import { MapPin, Bed, Bath, Square, Heart, Eye, ArrowUpRight } from "lucide-react";
@@ -478,7 +474,7 @@
 //             )}
 //             onError={(e) => (e.currentTarget.src = '/placeholder.svg')}
 //           />
-          
+
 //           {/* Visual Overlay Shimmer */}
 //           <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-transparent to-transparent opacity-60" />
 
@@ -506,8 +502,8 @@
 //             }}
 //             className={cn(
 //               "absolute top-4 right-4 p-3 rounded-2xl backdrop-blur-md transition-all duration-300 z-20",
-//               isLiked 
-//                 ? "bg-red-500 text-white" 
+//               isLiked
+//                 ? "bg-red-500 text-white"
 //                 : "bg-white/10 text-white hover:bg-white/30 border border-white/20"
 //             )}
 //           >
@@ -520,7 +516,7 @@
 //               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.1em] mb-0.5">Starting From</p>
 //               <p className="text-lg font-black text-slate-900 leading-none">{price}</p>
 //             </div>
-            
+
 //             {views !== undefined && views > 0 && (
 //               <div className="bg-black/50 backdrop-blur-md text-white px-3 py-2 rounded-xl flex items-center gap-1.5 border border-white/10">
 //                 <Eye className="h-3.5 w-3.5 text-blue-300" />
@@ -584,13 +580,6 @@
 
 // export default PropertyCard;
 
-
-
-
-
-
-
-
 // ===================== version 2 =====================
 
 // import { Card } from "@/components/ui/card";
@@ -606,7 +595,7 @@
 
 //   return (
 //     <Link href={`/properties/${id}`} className="block group">
-//       <div 
+//       <div
 //         className="relative bg-white p-4 transition-all duration-700"
 //         onMouseEnter={() => setIsHovered(true)}
 //         onMouseLeave={() => setIsHovered(false)}
@@ -621,7 +610,7 @@
 //               isHovered ? "scale-105" : "scale-100"
 //             )}
 //           />
-          
+
 //           {/* Minimalist Like Button */}
 //           <button className="absolute top-4 right-4 z-20 mix-blend-difference text-white hover:scale-110 transition-transform">
 //             <Heart className="h-5 w-5" />
@@ -697,12 +686,6 @@
 
 // export default PropertyCard;
 
-
-
-
-
-
-
 // =================== version 3 =====================
 
 // import { Card } from "@/components/ui/card";
@@ -722,7 +705,7 @@
 //   featured,
 //   propertyType,
 // }: any) => {
-  
+
 //   const formatArea = (sqft: number) => {
 //     if (sqft >= 43560) return `${(sqft / 43560).toFixed(2)} Acres`;
 //     return `${sqft.toLocaleString()} sq.ft`;
@@ -733,7 +716,7 @@
 //       <Link href={`/properties/${id}`} className="block">
 //         {/* Main Background Container using Theme Slate/Navy hue */}
 //         <div className="bg-[#F0F4F8] rounded-[2.5rem] p-3 border border-slate-200/60 transition-all hover:shadow-xl hover:shadow-blue-900/10">
-          
+
 //           {/* Image Section */}
 //           <div className="relative h-64 w-full rounded-[2rem] overflow-hidden">
 //             <img
@@ -741,7 +724,7 @@
 //               alt={title}
 //               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
 //             />
-            
+
 //             {/* RERA Badge - Using Theme Blue */}
 //             <div className="absolute top-4 left-4 bg-[#1A365D] text-white px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-lg">
 //               <ShieldCheck className="h-4 w-4" />
@@ -757,7 +740,7 @@
 
 //           {/* Overlapping Info Card */}
 //           <div className="bg-white rounded-[2rem] -mt-12 relative z-10 p-6 mx-2 border border-slate-100 shadow-lg shadow-slate-200/50">
-            
+
 //             {/* Price Row */}
 //             <div className="flex justify-between items-baseline border-b border-dashed border-slate-100 pb-4 mb-4">
 //               <span className="text-2xl font-black text-[#1A365D] tracking-tight">
@@ -817,11 +800,6 @@
 
 // export default PropertyCard;
 
-
-
-
-
-
 // ================ version 4 ======================
 
 // import { Card } from "@/components/ui/card";
@@ -841,7 +819,7 @@
 //   featured,
 //   propertyType,
 // }: any) => {
-  
+
 //   const formatArea = (sqft: number) => {
 //     if (sqft >= 43560) return `${(sqft / 43560).toFixed(1)} Ac`;
 //     return `${sqft.toLocaleString()} sqft`;
@@ -851,7 +829,7 @@
 //     <div className="w-full max-w-[380px] group">
 //       <Link href={`/properties/${id}`} className="block">
 //         <div className="relative bg-white rounded-[2rem] p-2 transition-all duration-300 border border-slate-100 hover:shadow-2xl hover:shadow-blue-900/10">
-          
+
 //           {/* Compressed Image Section */}
 //           <div className="relative h-48 w-full rounded-[1.5rem] overflow-hidden">
 //             <img
@@ -902,7 +880,7 @@
 //                 <span className="text-[9px] text-blue-200 font-bold uppercase tracking-tighter">Price</span>
 //                 <span className="text-lg font-black text-white leading-none tracking-tight">{price}</span>
 //               </div>
-              
+
 //               <div className="flex items-center gap-2 bg-white/10 hover:bg-white/20 transition-colors py-2 px-4 rounded-xl text-white">
 //                 <span className="text-[10px] font-bold uppercase tracking-widest">Details</span>
 //                 <ArrowRight className="h-4 w-4" />
@@ -917,11 +895,17 @@
 
 // export default PropertyCard;
 
-
-
-
 import { Card } from "@/components/ui/card";
-import { MapPin, Bed, Bath, Square, ShieldCheck, ArrowRight, Heart, Eye } from "lucide-react";
+import {
+  MapPin,
+  Bed,
+  Bath,
+  Square,
+  ShieldCheck,
+  ArrowRight,
+  Heart,
+  Eye,
+} from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -950,29 +934,34 @@ const PropertyCard = ({
   };
 
   return (
-    <div className="w-full max-w-[370px] group">
+    <div className="w-full max-w-[370px] group mx-auto">
       <Link href={`/properties/${id}`} className="block">
-        <div className={cn(
-          "relative bg-white rounded-[2rem] p-2 transition-all duration-300",
-          /* Distinct Thin Border */
-          "border-[1px] border-[#1A365D]/20 shadow-sm",
-          /* Hover Effect */
-          "hover:border-[#1A365D]/60 hover:shadow-xl hover:shadow-blue-900/10"
-        )}>
-          
+        <div
+          className={cn(
+            "relative bg-white rounded-[2rem] p-2 transition-all duration-300",
+            /* Distinct Thin Border */
+            "border-[1px] border-[#1A365D]/20 shadow-sm",
+            /* Hover Effect */
+            "hover:border-[#1A365D]/60 hover:shadow-xl hover:shadow-blue-900/10",
+          )}
+        >
           {/* Image Section */}
           <div className="relative h-44 w-full rounded-[1.6rem] overflow-hidden">
             <img
-              src={typeof imageUrl === 'string' ? imageUrl : (imageUrl as any).src}
+              src={
+                typeof imageUrl === "string" ? imageUrl : (imageUrl as any).src
+              }
               alt={title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
-            
+
             {/* RERA / Featured Badges */}
             <div className="absolute top-3 left-3 flex flex-col gap-2">
               <div className="bg-[#1A365D] text-white px-2.5 py-1 rounded-lg flex items-center gap-1.5 shadow-md">
                 <ShieldCheck className="h-3 w-3 text-blue-300" />
-                <span className="text-[9px] font-black uppercase tracking-wider">RERA</span>
+                <span className="text-[9px] font-black uppercase tracking-wider">
+                  RERA
+                </span>
               </div>
               {featured && (
                 <div className="bg-orange-500 text-white px-2.5 py-1 rounded-lg text-[9px] font-black uppercase tracking-wider">
@@ -991,12 +980,17 @@ const PropertyCard = ({
                 }}
                 className={cn(
                   "absolute top-3 right-3 p-2 rounded-full backdrop-blur-md transition-all duration-300 z-20",
-                  isLiked 
-                    ? "bg-red-500 text-white shadow-lg" 
-                    : "bg-black/20 text-white hover:bg-white/40"
+                  isLiked
+                    ? "bg-red-500 text-white shadow-lg"
+                    : "bg-black/20 text-white hover:bg-white/40",
                 )}
               >
-                <Heart className={cn("h-4 w-4 transition-transform hover:scale-110", isLiked && "fill-current")} />
+                <Heart
+                  className={cn(
+                    "h-4 w-4 transition-transform hover:scale-110",
+                    isLiked && "fill-current",
+                  )}
+                />
               </button>
             )}
 
@@ -1017,7 +1011,9 @@ const PropertyCard = ({
               </h3>
               <div className="flex items-center gap-1 text-slate-400">
                 <MapPin className="h-3 w-3 text-[#1A365D]" />
-                <span className="text-[11px] font-medium truncate">{location}</span>
+                <span className="text-[11px] font-medium truncate">
+                  {location}
+                </span>
               </div>
             </div>
 
@@ -1025,29 +1021,41 @@ const PropertyCard = ({
             <div className="flex items-center justify-between py-2 px-4 bg-slate-50 rounded-xl mb-4 border border-slate-100">
               <div className="flex items-center gap-1.5">
                 <Bed className="h-3.5 w-3.5 text-slate-400" />
-                <span className="text-xs font-bold text-slate-700">{bedrooms}</span>
+                <span className="text-xs font-bold text-slate-700">
+                  {bedrooms}
+                </span>
               </div>
               <div className="w-px h-3 bg-slate-200" />
               <div className="flex items-center gap-1.5">
                 <Bath className="h-3.5 w-3.5 text-slate-400" />
-                <span className="text-xs font-bold text-slate-700">{bathrooms}</span>
+                <span className="text-xs font-bold text-slate-700">
+                  {bathrooms}
+                </span>
               </div>
               <div className="w-px h-3 bg-slate-200" />
               <div className="flex items-center gap-1.5">
                 <Square className="h-3.5 w-3.5 text-slate-400" />
-                <span className="text-xs font-bold text-slate-700">{formatArea(area)}</span>
+                <span className="text-xs font-bold text-slate-700">
+                  {formatArea(area)}
+                </span>
               </div>
             </div>
 
             {/* Price & Integrated CTA */}
             <div className="flex items-center justify-between bg-[#1A365D] rounded-2xl p-1.5 pl-4 transition-colors group-hover:bg-[#142a4a]">
               <div className="flex flex-col">
-                <span className="text-[8px] text-blue-300 font-bold uppercase tracking-tighter opacity-80">Price</span>
-                <span className="text-lg font-black text-white leading-none tracking-tight">{price}</span>
+                <span className="text-[8px] text-blue-300 font-bold uppercase tracking-tighter opacity-80">
+                  Price
+                </span>
+                <span className="text-lg font-black text-white leading-none tracking-tight">
+                  {price}
+                </span>
               </div>
-              
+
               <div className="flex items-center gap-2 bg-white/10 hover:bg-white/20 transition-all py-2 px-4 rounded-xl text-white">
-                <span className="text-[10px] font-bold uppercase tracking-widest">Details</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest">
+                  Details
+                </span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </div>
             </div>

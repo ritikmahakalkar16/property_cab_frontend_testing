@@ -20,7 +20,8 @@ import {
     ArrowRight
 } from "lucide-react";
 
-const Base_Url = process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com";
+// const Base_Url = process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com";
+const Base_Url = process.env.NEXT_PUBLIC_API_URL || "https://paleturquoise-caribou-901347.hostingersite.com";
 const API_URL = `${Base_Url}/api/v1/contact`;
 
 const ContactClient = () => {

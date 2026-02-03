@@ -4,8 +4,8 @@ import EventsClient, { Event } from "./EventsClient";
 async function getEvents() {
     try {
         const [upRes, pastRes] = await Promise.all([
-            fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com"}/api/v1/events/upcoming`, { cache: "no-store" }),
-            fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://propertycab-backend-loginless.onrender.com"}/api/v1/events/past`, { cache: "no-store" })
+            fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/v1/events/upcoming`, { cache: "no-store" }),
+            fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/v1/events/past`, { cache: "no-store" })
         ]);
 
         const upData = await upRes.json();
